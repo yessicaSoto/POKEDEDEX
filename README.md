@@ -1,2 +1,0 @@
-# pkm
-listado de pokemon

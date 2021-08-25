@@ -1,0 +1,70 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="https://cdn.sstatic.net/Sites/es/img/apple-touch-icon.png?v=7739871010e6">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Font Awesome -->
+    @Styles.Render("~/Content/FontAwesome")
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!--Notificaciones-->
+    <link rel="stylesheet" type="text/css" href="../../dist/overhang.min.css" />
+
+    <style>
+    body { background-image: url('http://internovam.com/blog/wp-content/uploads/2016/07/Screenshot_3.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%; }
+    </style>
+    @RenderSection("Styles", required: false)
+</head>
+
+<body class="hold-transition sidebar-mini" style="font-size: 11pt">
+    <div id='loader' style='display: none; position:fixed ;top:20%;left:50%; z-index:1100; width: 100%; height: 100%;'>
+        <img src="~/images/loading.gif" width="150" height="150">
+    </div>
+
+    <!-- Site wrapper -->
+    <div class="wrapper">
+
+
+        <div class="" id="contenido">
+            @RenderBody()
+        </div>
+
+
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+    @Scripts.Render("~/bundles/jquery")
+
+    <!-- Bootstrap 4 -->
+    @Scripts.Render("~/bundles/boostrap")
+    <!-- jquery-validation -->
+    <script src="../../plugins/jquery-validation/jquery.validate.min.js"></script>
+    <script src="../../plugins/jquery-validation/additional-methods.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--notificaciones-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../dist/overhang.min.js"></script>
+    @Scripts.Render("~/bundles/adminlte")
+
+    @Scripts.Render("~/bundles/vue")
+    @Scripts.Render("~/bundles/axios")
+
+    @Scripts.Render("~/bundles/datatable")
+
+    @Scripts.Render("~/bundles/vue")
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

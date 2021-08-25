@@ -1,0 +1,213 @@
+/* Add here all your CSS customizations */
+/* Page Header */
+.page-header h2 {
+    border-bottom-color: #0066ff !important;
+}
+
+.page-header {
+    background: #0066ff /*#171717*/;
+    border-left: 1px solid #d49a00;
+}
+
+.sidebar-left .sidebar-header .sidebar-title {
+    background: #0066ff /*#1D2127*/;
+}
+
+.sidebar-left .sidebar-header .sidebar-toggle {
+    background-color: #0066ff /*#171717*/;
+}
+
+/*.fa-bars::before {
+    color: white;
+}*/
+
+.nano-content {
+    background-color: #3c3c3c !important;
+}
+
+
+element.style {
+}
+
+ul.nav-main > li.nav-active > a {
+    box-shadow: 2px 0 0 #0066ff inset;
+}
+
+nav nav-main {
+    border-bottom: 2px solid #3c3c3c;
+}
+
+.fa fa-home {
+    color: white;
+}
+
+/* ICONS */
+.sidebar-left .sidebar-header .sidebar-toggle i {
+    color: #f3f3f3;
+}
+
+.sidebar-left .sidebar-header .sidebar-toggle:hover i {
+    color: #0066ff;
+}
+
+/* BREADCRUMS */
+#procesoPadre {
+    color: white;
+}
+
+#procesoHijo {
+    color: white;
+}
+
+.page-header .breadcrumbs li:after {
+    content: '/';
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+/* SCROLL MENU */
+html.no-overflowscrolling .nano > .nano-pane > .nano-slider {
+    background: #0066ff;
+}
+
+.toggle label {
+    border-left-color: #0066ff;
+    color: #0066ff;
+}
+
+.toggle.active > label {
+    background: #0066ff !important;
+    border-color: #0066ff;
+}
+
+
+/* main background LOGIN custom */
+#main-custom {
+    background-image: url("../assets/images/fondo-auka.jpg");
+    background-position: center top;
+    background-size: 100% auto;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+
+/* INPUTS */
+.admin-form.theme-info .gui-input:hover,
+.admin-form.theme-info .gui-textarea:hover,
+.admin-form.theme-info .select > select:hover,
+.admin-form.theme-info .select-multiple select:hover,
+.admin-form.theme-info .gui-input:hover ~ .input-footer,
+.admin-form.theme-info .file .gui-file:hover + .gui-input,
+.admin-form.theme-info .gui-textarea:hover ~ .input-footer {
+    border-color: #0066ff;
+}
+
+.admin-form.theme-info .gui-input:focus,
+.admin-form.theme-info .gui-textarea:focus,
+.admin-form.theme-info .select > select:focus,
+.admin-form.theme-info .select-multiple select:focus {
+    border-color: #0066ff;
+    color: #3C3C3C;
+}
+
+    .admin-form.theme-info .gui-input:focus ~ .field-icon i,
+    .admin-form.theme-info .gui-textarea:focus ~ .field-icon i {
+        color: #0066ff;
+    }
+
+    .admin-form.theme-info .select-multiple select:focus,
+    .admin-form.theme-info .gui-input:focus ~ .input-footer,
+    .admin-form.theme-info .gui-textarea:focus ~ .input-footer,
+    .admin-form.theme-info .file .gui-file:focus + .gui-input {
+        border-color: #0066ff;
+    }
+
+/* BOOSTRAP COLORS */
+.btn-primary {
+    color: #fff;
+    background-color: #0066ff;
+    border-color: #2e6da4;
+}
+
+
+/* Buttons  */
+body .btn-primary {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #0066ff;
+    border-color: #8265193b;
+}
+
+    body .btn-primary:hover {
+        border-color: #0066ff !important;
+        background-color: #0066ff;
+    }
+
+    body .btn-primary:active,
+    body .btn-primary:focus {
+        border-color: #0066ff !important;
+        background-color: #0066ff !important;
+    }
+
+    /* Pagination */
+.pagination > li a {
+    color: #777777;
+}
+
+.pagination > li a:hover,
+.pagination > li a:focus {
+    color: #0066ff;
+}
+
+
+html .pagination > li.active a,
+html.dark .pagination > li.active a,
+html .pagination > li.active span,
+html.dark .pagination > li.active span,
+html .pagination > li.active a:hover,
+html.dark .pagination > li.active a:hover,
+html .pagination > li.active span:hover,
+html.dark .pagination > li.active span:hover,
+html .pagination > li.active a:focus,
+html.dark .pagination > li.active a:focus,
+html .pagination > li.active span:focus,
+html.dark .pagination > li.active span:focus {
+    background-color: #0066ff;
+    border-color: #0066ff;
+}
+
+html .pagination > li.active a,
+html.dark .pagination > li.active a {
+    background-color: #0066ff;
+}
+
+/* Social Icons */
+.social-icons-list a {
+    background: #0066ff;
+}
+
+a,
+.btn-link {
+    color: #0066ff;
+}
+
+    a:hover,
+    a:focus,
+    .btn-link:hover,
+    .btn-link:focus {
+        color: #0066ff;
+    }
+
+
+    /* SELECT */
+option:hover {
+    background-color: deepskyblue;
+}
+
+/* Form */
+.form-control:focus {
+    border-color: #0066ff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255,204,51,0.3);
+}

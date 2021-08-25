@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    .buscar{
+        margin: 10% !important
+    }
+    div.scroll {
+        width: 600px;
+        height: 500px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;
+    }
+ 
+</style>
+<body id="main-custom" class="external-page sb-l-c sb-r-c" style="font-size: 11pt">
+
+
+    <div class="card card-danger buscar">
+        @*<div class="card-header">
+            <h3 class="card-title"><i class="fas fa-user-circle" style="color: aliceblue; height: 25px; width: 25px;"></i>  Busqueda de usuarios</h3>
+        </div>*@
+
+        <div class="card-body" v-cloak id="app">
+            <form id="Pokemon" method="get">
+                <div class="row col-12">
+                    <div class="grid-container col-12 scroll" >
+                        <div class="grid-item col-12" v-for="Pokemon in pokedex" v-bind:value="Pokemon.id">
+                            <div class="card card-danger">
+                                <div class="card-header">
+                                    <h3 class="card-title"><img src="~/images/pokeball clasica.png" width="30" height="30" />  <b><span id="nombre">{{ Pokemon.nombre }} </span> </b> </h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+
+                                        <div class="col-4">
+                                            <br /> <b><span class="PkmLabel">Height: </span> </b>{{ Pokemon.altura }}
+                                            <br /><b><span class="PkmLabel">Weight: </span></b>{{ Pokemon.peso }}
+                                            <br /><b><span class="PkmLabel">Exp. Points: </span></b>{{ Pokemon.exp_base }}
+                                        </div>
+                                        <div class="col-4">
+                                            <br />   <b><span class="PkmLabel">Type: </span></b>{{ Pokemon.tipos }}
+                                            <br />   <b> <span class="PkmLabel">Abilities: </span></b>{{ Pokemon.habilidades }}
+                                            <br />   <b><span class="PkmLabel">Hidden Abilitie: </span></b>{{ Pokemon.habilidad_oculta }}
+                                        </div>
+                                        <div class="col-4">
+                                            <img v-bind:src="'https://assets.pokemon.com/assets/cms2/img/pokedex/full/' + Pokemon.foto" width="100" height="100" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- /.card-body -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/vue")
+    @Scripts.Render("~/bundles/datatable")
+
+    <script src="../../ControllerVue/index.js"></script>
+    <script>
+
+    </script>
+</body>
